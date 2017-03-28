@@ -15,9 +15,6 @@
 		3F8549351E8AEB2A00EE8427 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85492F1E8AEB2900EE8427 /* Artist.swift */; };
 		3F8549361E8AEB2A00EE8427 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549301E8AEB2900EE8427 /* DescriptionViewController.swift */; };
 		3F8549371E8AEB2A00EE8427 /* SeeMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549311E8AEB2900EE8427 /* SeeMoreViewController.swift */; };
-		3F8549381E8AEB2A00EE8427 /* UsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549321E8AEB2900EE8427 /* UsuarioTableViewCell.swift */; };
-		3F8549391E8AEB2A00EE8427 /* UsuarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549331E8AEB2A00EE8427 /* UsuarioTableViewController.swift */; };
-		3F85493A1E8AEB2A00EE8427 /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549341E8AEB2A00EE8427 /* UsuarioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +28,6 @@
 		3F85492F1E8AEB2900EE8427 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Artist.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/Artist.swift"; sourceTree = "<group>"; };
 		3F8549301E8AEB2900EE8427 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		3F8549311E8AEB2900EE8427 /* SeeMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeeMoreViewController.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/SeeMoreViewController.swift"; sourceTree = "<group>"; };
-		3F8549321E8AEB2900EE8427 /* UsuarioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsuarioTableViewCell.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/UsuarioTableViewCell.swift"; sourceTree = "<group>"; };
-		3F8549331E8AEB2A00EE8427 /* UsuarioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsuarioTableViewController.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/UsuarioTableViewController.swift"; sourceTree = "<group>"; };
-		3F8549341E8AEB2A00EE8427 /* UsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsuarioViewController.swift; path = "../../Hackatruck-MeuTrampo/musicNavBar/UsuarioViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +73,6 @@
 				3F85492F1E8AEB2900EE8427 /* Artist.swift */,
 				3F8549301E8AEB2900EE8427 /* DescriptionViewController.swift */,
 				3F8549311E8AEB2900EE8427 /* SeeMoreViewController.swift */,
-				3F8549321E8AEB2900EE8427 /* UsuarioTableViewCell.swift */,
-				3F8549331E8AEB2A00EE8427 /* UsuarioTableViewController.swift */,
-				3F8549341E8AEB2A00EE8427 /* UsuarioViewController.swift */,
 				3F8549291E8AEAE300EE8427 /* Main.storyboard */,
 				3F393E0B1E89876A002753EA /* Supporting Files */,
 				3F6A1E6F1E89857E00644C36 /* Assets.xcassets */,
@@ -164,10 +155,7 @@
 			files = (
 				3F8549351E8AEB2A00EE8427 /* Artist.swift in Sources */,
 				3F8549361E8AEB2A00EE8427 /* DescriptionViewController.swift in Sources */,
-				3F8549381E8AEB2A00EE8427 /* UsuarioTableViewCell.swift in Sources */,
-				3F8549391E8AEB2A00EE8427 /* UsuarioTableViewController.swift in Sources */,
 				3F6A1E6E1E89857E00644C36 /* FindATrampo.xcdatamodeld in Sources */,
-				3F85493A1E8AEB2A00EE8427 /* UsuarioViewController.swift in Sources */,
 				3F6A1E661E89857E00644C36 /* AppDelegate.swift in Sources */,
 				3F8549371E8AEB2A00EE8427 /* SeeMoreViewController.swift in Sources */,
 			);
