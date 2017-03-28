@@ -87,12 +87,28 @@
 			children = (
 				3F0B04AC1E8AFFCC0025C506 /* Model */,
 				3F393E0B1E89876A002753EA /* Supporting Files */,
-				3F6A1E691E89857E00644C36 /* Main.storyboard */,
-				3F6A1E6F1E89857E00644C36 /* Assets.xcassets */,
+				3F7398541E8B0276006C7351 /* Controller */,
+				3F7398531E8B0269006C7351 /* View */,
 				3F6A1E6C1E89857E00644C36 /* FindATrampo.xcdatamodeld */,
-				3FC4D4511E89A73100B04D7A /* LoginViewController.swift */,
 			);
 			path = FindATrampo;
+			sourceTree = "<group>";
+		};
+		3F7398531E8B0269006C7351 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A1E691E89857E00644C36 /* Main.storyboard */,
+				3F6A1E6F1E89857E00644C36 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F7398541E8B0276006C7351 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4D4511E89A73100B04D7A /* LoginViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
