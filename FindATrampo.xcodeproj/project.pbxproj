@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F0B04AF1E8B00680025C506 /* Usuario+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04AD1E8B00680025C506 /* Usuario+CoreDataClass.swift */; };
-		3F0B04B01E8B00680025C506 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04AE1E8B00680025C506 /* Usuario+CoreDataProperties.swift */; };
 		3F0B04B21E8B00AC0025C506 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04B11E8B00AC0025C506 /* CoreDataManager.swift */; };
 		3F0B04B41E8B013F0025C506 /* TrampoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04B31E8B013F0025C506 /* TrampoDAO.swift */; };
+		3F0B04BF1E8C33160025C506 /* Servico+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04BB1E8C33160025C506 /* Servico+CoreDataClass.swift */; };
+		3F0B04C01E8C33160025C506 /* Servico+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04BC1E8C33160025C506 /* Servico+CoreDataProperties.swift */; };
+		3F0B04C11E8C33160025C506 /* Usuario+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04BD1E8C33160025C506 /* Usuario+CoreDataClass.swift */; };
+		3F0B04C21E8C33160025C506 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B04BE1E8C33160025C506 /* Usuario+CoreDataProperties.swift */; };
 		3F6A1E661E89857E00644C36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A1E651E89857E00644C36 /* AppDelegate.swift */; };
 		3F6A1E6B1E89857E00644C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A1E691E89857E00644C36 /* Main.storyboard */; };
 		3F6A1E6E1E89857E00644C36 /* FindATrampo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A1E6C1E89857E00644C36 /* FindATrampo.xcdatamodeld */; };
@@ -21,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F0B04AD1E8B00680025C506 /* Usuario+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Usuario+CoreDataClass.swift"; path = "../Usuario+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F0B04AE1E8B00680025C506 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Usuario+CoreDataProperties.swift"; path = "../Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F0B04B11E8B00AC0025C506 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3F0B04B31E8B013F0025C506 /* TrampoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrampoDAO.swift; sourceTree = "<group>"; };
+		3F0B04BB1E8C33160025C506 /* Servico+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Servico+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F0B04BC1E8C33160025C506 /* Servico+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Servico+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0B04BD1E8C33160025C506 /* Usuario+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F0B04BE1E8C33160025C506 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F6A1E621E89857E00644C36 /* FindATrampo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindATrampo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6A1E651E89857E00644C36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F6A1E6A1E89857E00644C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,8 +54,10 @@
 		3F0B04AC1E8AFFCC0025C506 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3F0B04AD1E8B00680025C506 /* Usuario+CoreDataClass.swift */,
-				3F0B04AE1E8B00680025C506 /* Usuario+CoreDataProperties.swift */,
+				3F0B04BB1E8C33160025C506 /* Servico+CoreDataClass.swift */,
+				3F0B04BC1E8C33160025C506 /* Servico+CoreDataProperties.swift */,
+				3F0B04BD1E8C33160025C506 /* Usuario+CoreDataClass.swift */,
+				3F0B04BE1E8C33160025C506 /* Usuario+CoreDataProperties.swift */,
 				3F0B04B11E8B00AC0025C506 /* CoreDataManager.swift */,
 				3F0B04B31E8B013F0025C506 /* TrampoDAO.swift */,
 			);
@@ -186,13 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0B04C21E8C33160025C506 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F0B04B41E8B013F0025C506 /* TrampoDAO.swift in Sources */,
+				3F0B04BF1E8C33160025C506 /* Servico+CoreDataClass.swift in Sources */,
+				3F0B04C01E8C33160025C506 /* Servico+CoreDataProperties.swift in Sources */,
+				3F0B04C11E8C33160025C506 /* Usuario+CoreDataClass.swift in Sources */,
 				3F0B04B21E8B00AC0025C506 /* CoreDataManager.swift in Sources */,
-				3F0B04B01E8B00680025C506 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F84B7E71E8C22FB008C6BDA /* SlidersViewController.swift in Sources */,
 				3FC4D4521E89A73100B04D7A /* LoginViewController.swift in Sources */,
 				3F6A1E6E1E89857E00644C36 /* FindATrampo.xcdatamodeld in Sources */,
-				3F0B04AF1E8B00680025C506 /* Usuario+CoreDataClass.swift in Sources */,
 				3F6A1E661E89857E00644C36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

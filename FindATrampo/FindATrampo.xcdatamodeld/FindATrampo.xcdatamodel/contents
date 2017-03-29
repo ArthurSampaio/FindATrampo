@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Servico" representedClassName=".Servico" syncable="YES">
+        <attribute name="dataFinal" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dataInicio" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valor" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="patrao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usuario" inverseName="servicoEscolhido" inverseEntity="Usuario" syncable="YES"/>
+        <relationship name="usuarioContratado" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usuario" inverseName="servicoOferecido" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
     <entity name="Usuario" representedClassName=".Usuario" syncable="YES">
         <attribute name="avaliacao" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,8 +22,11 @@
         <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="servicoEscolhido" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Servico" inverseName="patrao" inverseEntity="Servico" syncable="YES"/>
+        <relationship name="servicoOferecido" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Servico" inverseName="usuarioContratado" inverseEntity="Servico" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-9" positionY="36" width="128" height="210"/>
+        <element name="Servico" positionX="198" positionY="171" width="128" height="163"/>
+        <element name="Usuario" positionX="-90" positionY="96" width="128" height="238"/>
     </elements>
 </model>
