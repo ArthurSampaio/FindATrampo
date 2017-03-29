@@ -12,4 +12,13 @@ import CoreData
 
 public class Usuario: NSManagedObject {
 
+    convenience init() {
+        
+        let context = CoreDataManager.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "Usuario", in: context)
+        
+        self.init(entity: entity!, insertInto: context)
+        
+    }
+    
 }

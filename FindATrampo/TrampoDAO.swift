@@ -39,13 +39,13 @@ class TrampoDAO {
         let request: NSFetchRequest<Usuario> = Usuario.fetchRequest()
         
         request.sortDescriptors = [
-            NSSortDescriptor(key: "titulo", ascending: true)
+            NSSortDescriptor(key: "nome", ascending: true)
         ]
         
         do {
             try resultados = CoreDataManager.getContext().fetch(request)
         } catch let error {
-            print("Error ao buscar Filmes: \(error)")
+            print("Error ao buscar usuarios: \(error)")
         }
         
         return resultados
@@ -56,5 +56,31 @@ class TrampoDAO {
     // -------------SERVICOS -------------------
     
     
+    static func adicionar(servico: Servico) -> Bool {
+        return CoreDataManager.inserir(servico)
+    }
+    
+    static func remover(servico: Servico) -> Bool {
+        
+        return CoreDataManager.remover(servico)
+    }
+    
+    static func buscarTodos() -> [Servico] {
+        var resultados = [Servico] ()
+        
+        let request: NSFetchRequest<Servico> = Servico.fetchRequest()
+        
+        request.sortDescriptors = [
+            NSSortDescriptor(key: "nome", ascending: true)
+        ]
+        
+        do {
+            try resultados = CoreDataManager.getContext().fetch(request)
+        } catch let error {
+            print("Error ao buscar Servicos: \(error)")
+        }
+        
+        return resultados
+    }
     
 }

@@ -73,11 +73,34 @@ class CoreDataManager {
     static func inserir(_ obj: NSManagedObject)-> Bool {
         var result = false
         
+        CoreDataManager.getContext().insert(obj)
+        
+        
+        do {
+            try CoreDataManager.getContext().save()
+            result = true
+            
+        } catch let error {
+            print("Erro ao inserir: \(error)")
+        }
+        
         return result
     }
     
     static func remover(_ obj: NSManagedObject)-> Bool {
         var result = false
+        
+        CoreDataManager.getContext().delete(obj)
+        
+        
+        do {
+            try CoreDataManager.getContext().save()
+            
+            result = true
+            
+        } catch let error {
+            print("Erro ao remover: \(error)")
+        }
         
         return result
     }
