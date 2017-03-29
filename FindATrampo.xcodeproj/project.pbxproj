@@ -21,6 +21,7 @@
 		3F84B7E71E8C22FB008C6BDA /* SlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */; };
 		3F8549441E8C33EC00EE8427 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549431E8C33EC00EE8427 /* UserTableViewController.swift */; };
 		3F8549461E8C349300EE8427 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8549451E8C349300EE8427 /* UserTableViewCell.swift */; };
+		3FB6F5761E8C39AF008362CB /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6F5751E8C39AF008362CB /* RegistroViewController.swift */; };
 		3FC4D4521E89A73100B04D7A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4511E89A73100B04D7A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidersViewController.swift; sourceTree = "<group>"; };
 		3F8549431E8C33EC00EE8427 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		3F8549451E8C349300EE8427 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		3FB6F5751E8C39AF008362CB /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		3FC4D4511E89A73100B04D7A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */,
 				3F6A1E691E89857E00644C36 /* Main.storyboard */,
+				3FB6F5751E8C39AF008362CB /* RegistroViewController.swift */,
 				3F6A1E6F1E89857E00644C36 /* Assets.xcassets */,
 			);
 			name = View;
@@ -203,6 +206,7 @@
 				3F0B04BF1E8C33160025C506 /* Servico+CoreDataClass.swift in Sources */,
 				3F0B04C01E8C33160025C506 /* Servico+CoreDataProperties.swift in Sources */,
 				3F8549461E8C349300EE8427 /* UserTableViewCell.swift in Sources */,
+				3FB6F5761E8C39AF008362CB /* RegistroViewController.swift in Sources */,
 				3F0B04C11E8C33160025C506 /* Usuario+CoreDataClass.swift in Sources */,
 				3F0B04B21E8B00AC0025C506 /* CoreDataManager.swift in Sources */,
 				3F84B7E71E8C22FB008C6BDA /* SlidersViewController.swift in Sources */,
