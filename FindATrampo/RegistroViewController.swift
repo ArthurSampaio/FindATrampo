@@ -16,8 +16,6 @@ class RegistroViewController: UIViewController {
     @IBOutlet weak var profissaoTextField: UITextField!
     @IBOutlet weak var descricaoLabel: UILabel!
     @IBOutlet weak var descricaoTextField: UITextField!
-    @IBOutlet weak var avaliacaoLavel: UILabel!
-    @IBOutlet weak var avaliacaoTextField: UITextField!
     
     
     @IBAction func salvarUsuario(_ sender: Any) {
@@ -26,14 +24,14 @@ class RegistroViewController: UIViewController {
         usuario.nome = nomeTextField.text
         usuario.profissao = profissaoTextField.text
         usuario.descricao = descricaoTextField.text
-        usuario.avaliacao = (Float)(avaliacaoTextField.text! as String)!
+        usuario.avaliacao = 1.0
         
         if (TrampoDAO.adicionar(usuario: usuario)) {
             nomeTextField.text = ""
             profissaoTextField.text = ""
             descricaoTextField.text = ""
-            avaliacaoTextField.text = ""
             print ("worked")
+            
         }else{
             print ("fjdjfskdfs")
         }
