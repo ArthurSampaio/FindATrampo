@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NpU-Qf-qRj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5mw-1U-LHK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -245,68 +245,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="M1c-R7-15J">
-                                <rect key="frame" x="59" y="106" width="256" height="252"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="erz-8Z-CDU">
+                                <rect key="frame" x="36" y="40" width="303" height="151.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-rk-GvC">
-                                        <rect key="frame" x="105" y="0.0" width="46" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Std-kt-1EV">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIP-PP-BZB">
-                                        <rect key="frame" x="63" y="40.5" width="130" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7In-ac-tEC">
+                                        <rect key="frame" x="0.0" y="20.5" width="303" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Profissão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H49-xV-hW2">
-                                        <rect key="frame" x="92.5" y="90.5" width="71" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-HC-iye">
+                                        <rect key="frame" x="0.0" y="50.5" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Qual sua profissão?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-eH-SeG">
-                                        <rect key="frame" x="54" y="131" width="148" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-lM-hxy">
+                                        <rect key="frame" x="0.0" y="71" width="303" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9it-5P-RAJ">
-                                        <rect key="frame" x="89.5" y="181" width="77" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tas-n9-tcM">
+                                        <rect key="frame" x="0.0" y="101" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nos faça uma descrição sobre você." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TP8-av-pAd">
-                                        <rect key="frame" x="0.0" y="221.5" width="256" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3j-dS-g04">
+                                        <rect key="frame" x="0.0" y="121.5" width="303" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-yh-ixU">
-                                <rect key="frame" x="146" y="497" width="83" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-yh-ixU">
+                                <rect key="frame" x="56" y="370" width="263" height="30"/>
                                 <state key="normal" title="Registrar">
                                     <color key="titleColor" red="1" green="0.37945885854824202" blue="0.81930783443716448" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="salvarUsuario:" destination="AdU-3J-NEp" eventType="touchUpInside" id="tT9-tz-8o8"/>
+                                    <segue destination="5mw-1U-LHK" kind="show" identifier="showLoginView" id="8rk-jb-bQe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="r8W-yh-ixU" secondAttribute="trailing" constant="40" id="1hT-T3-eHt"/>
+                            <constraint firstItem="r8W-yh-ixU" firstAttribute="top" secondItem="erz-8Z-CDU" secondAttribute="bottom" constant="178.5" id="AQm-vc-HHo"/>
+                            <constraint firstItem="erz-8Z-CDU" firstAttribute="top" secondItem="Q5J-kf-mi8" secondAttribute="bottom" constant="20" id="Q7f-rF-Ed5"/>
+                            <constraint firstItem="erz-8Z-CDU" firstAttribute="leading" secondItem="nQ5-Iy-PFR" secondAttribute="leadingMargin" constant="20" id="Ych-j5-f80"/>
+                            <constraint firstItem="r8W-yh-ixU" firstAttribute="leading" secondItem="nQ5-Iy-PFR" secondAttribute="leadingMargin" constant="40" id="pjy-ob-Epy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="erz-8Z-CDU" secondAttribute="trailing" constant="20" id="qgL-O5-fsK"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="descricaoLabel" destination="9it-5P-RAJ" id="Ta6-fD-pRV"/>
-                        <outlet property="descricaoTextField" destination="TP8-av-pAd" id="HJN-mX-gw1"/>
-                        <outlet property="nomeLabel" destination="bRw-rk-GvC" id="OG3-zU-sqc"/>
-                        <outlet property="nomeTextField" destination="MIP-PP-BZB" id="qh8-bA-qus"/>
-                        <outlet property="profissaoLabel" destination="H49-xV-hW2" id="kh8-ZL-Nx2"/>
-                        <outlet property="profissaoTextField" destination="MVd-eH-SeG" id="6aU-Le-FLf"/>
+                        <outlet property="nameTextField" destination="7In-ac-tEC" id="qfK-JM-5rv"/>
+                        <outlet property="repeatSenhaTextField" destination="H3j-dS-g04" id="Jai-07-YwP"/>
+                        <outlet property="senhaTextField" destination="2dc-lM-hxy" id="Nry-2k-hdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lz3-WC-LY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,6 +364,10 @@
                                     <constraint firstAttribute="height" constant="43" id="DOn-SN-Prg"/>
                                 </constraints>
                                 <state key="normal" title="Logar"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="5mw-1U-LHK" eventType="touchUpInside" id="1JN-a0-MLS"/>
+                                    <segue destination="zPa-Y8-O81" kind="show" identifier="loginSegue" id="oeU-iU-hav"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-5W-ssF">
                                 <rect key="frame" x="26" y="502" width="323" height="35"/>
@@ -392,6 +400,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="nDj-ja-EuX"/>
+                    <connections>
+                        <outlet property="loginButton" destination="VnI-ha-d5P" id="leg-NI-B1A"/>
+                        <outlet property="loginTextField" destination="wXn-mC-OBM" id="z9G-Ye-x0J"/>
+                        <outlet property="senhaTextField" destination="s32-NY-V4H" id="edw-sc-hAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mu5-qc-Z7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,4 +521,7 @@
     <resources>
         <image name="findATrampo1" width="160" height="110"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8rk-jb-bQe"/>
+    </inferredMetricsTieBreakers>
 </document>

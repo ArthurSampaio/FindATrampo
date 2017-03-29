@@ -10,6 +10,38 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var loginTextField: UITextField!
+    
+    @IBOutlet weak var senhaTextField: UITextField!
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+        var usuarios = TrampoDAO.buscarTodosUsuarios()
+        
+        for usr in usuarios{
+            if(usr.nome == loginTextField.text! && usr.senha != "" && usr.senha! == senhaTextField.text!){
+                 self.performSegue(withIdentifier: "showLoginView", sender: self)
+                
+            }
+        }
+    }
+    
+    func performSegueWithIdentifier(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "loginSegue"
+        {
+            if let newView = segue.destination as? LoginViewController {
+                
+                
+                
+            }
+        }
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
