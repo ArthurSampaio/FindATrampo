@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5mw-1U-LHK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NpU-Qf-qRj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,6 +102,14 @@
             </objects>
             <point key="canvasLocation" x="-478" y="143"/>
         </scene>
+        <!--Sliders View Controller-->
+        <scene sceneID="6IG-od-kke">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NpU-Qf-qRj" customClass="SlidersViewController" customModule="FindATrampo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqO-25-0A4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4508" y="247"/>
+        </scene>
         <!--Login-->
         <scene sceneID="s3i-J8-qx8">
             <objects>
@@ -174,6 +182,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mu5-qc-Z7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1450.4000000000001" y="142.57871064467767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NcL-sk-fh5">
+            <objects>
+                <viewController storyboardIdentifier="pink1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lpP-7T-jLa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8uh-tX-NSM"/>
+                        <viewControllerLayoutGuide type="bottom" id="sbQ-Ne-obh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vCc-Qv-tV5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.43682608992774252" blue="0.94936491637107934" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXc-Fe-Dek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4508" y="1004"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vWu-bD-mbF">
+            <objects>
+                <viewController storyboardIdentifier="pink2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vZE-RX-ZA1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nKj-LH-nrC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ua3-HM-PfZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZVZ-AI-J9D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96145302323213466" green="0.57519765702062708" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPA-f1-Xvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3695" y="1003"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hZl-G5-9WB">
+            <objects>
+                <viewController storyboardIdentifier="pink3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aig-Hc-YR2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sNb-dg-7fQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="CDk-wT-POP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Qv-xy-eP9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-KY-f7q">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <state key="normal" title="Realize o Login"/>
+                                <connections>
+                                    <segue destination="5mw-1U-LHK" kind="show" id="4Za-Yh-uF8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.74490380101124365" blue="0.9949050691804685" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xU5-KY-f7q" secondAttribute="trailing" id="B3R-fZ-xqY"/>
+                            <constraint firstItem="xU5-KY-f7q" firstAttribute="top" secondItem="sNb-dg-7fQ" secondAttribute="bottom" constant="298" id="Doo-6L-WHa"/>
+                            <constraint firstItem="CDk-wT-POP" firstAttribute="top" secondItem="xU5-KY-f7q" secondAttribute="bottom" constant="319" id="SON-CF-AhQ"/>
+                            <constraint firstItem="xU5-KY-f7q" firstAttribute="leading" secondItem="0Qv-xy-eP9" secondAttribute="leadingMargin" id="vR3-hZ-iT5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlj-2Z-r4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2866" y="1003"/>
         </scene>
         <!--Item-->
         <scene sceneID="bmd-nc-5XX">

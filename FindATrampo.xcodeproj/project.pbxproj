@@ -16,6 +16,7 @@
 		3F6A1E6E1E89857E00644C36 /* FindATrampo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A1E6C1E89857E00644C36 /* FindATrampo.xcdatamodeld */; };
 		3F6A1E701E89857E00644C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A1E6F1E89857E00644C36 /* Assets.xcassets */; };
 		3F6A1E731E89857E00644C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A1E711E89857E00644C36 /* LaunchScreen.storyboard */; };
+		3F84B7E71E8C22FB008C6BDA /* SlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */; };
 		3FC4D4521E89A73100B04D7A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4D4511E89A73100B04D7A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		3F6A1E6F1E89857E00644C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F6A1E721E89857E00644C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F6A1E741E89857E00644C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidersViewController.swift; sourceTree = "<group>"; };
 		3FC4D4511E89A73100B04D7A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		3F7398531E8B0269006C7351 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F84B7E61E8C22FB008C6BDA /* SlidersViewController.swift */,
 				3F6A1E691E89857E00644C36 /* Main.storyboard */,
 				3F6A1E6F1E89857E00644C36 /* Assets.xcassets */,
 			);
@@ -186,6 +189,7 @@
 				3F0B04B41E8B013F0025C506 /* TrampoDAO.swift in Sources */,
 				3F0B04B21E8B00AC0025C506 /* CoreDataManager.swift in Sources */,
 				3F0B04B01E8B00680025C506 /* Usuario+CoreDataProperties.swift in Sources */,
+				3F84B7E71E8C22FB008C6BDA /* SlidersViewController.swift in Sources */,
 				3FC4D4521E89A73100B04D7A /* LoginViewController.swift in Sources */,
 				3F6A1E6E1E89857E00644C36 /* FindATrampo.xcdatamodeld in Sources */,
 				3F0B04AF1E8B00680025C506 /* Usuario+CoreDataClass.swift in Sources */,
