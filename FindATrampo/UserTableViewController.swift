@@ -113,25 +113,25 @@ class UserTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-//        if segue.identifier == "showNextView"
-//        {
-//            if let newView = segue.destination as? ArtistViewController {
-//                
-//                let index = tableView.indexPathForSelectedRow?.row
-//                
-//                var artist = Artist()
-//                
-//                if searchController.isActive && searchController.searchBar.text != "" {
-//                    artist = filteredArtists[index!]
-//                }else{
-//                    artist = artists[index!]
-//                }
-//                
-//                
-//                newView.artist = artist;
-//                
-//            }
-//        }
+        if segue.identifier == "showNextView"
+        {
+            if let newView = segue.destination as? UserViewController {
+                
+                let index = tableView.indexPathForSelectedRow?.row
+                
+                var usr = Usuario()
+                
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    usr = filteredUsers[index!]
+                }else{
+                    usr = users[index!]
+                }
+                
+                
+                newView.user = usr;
+                
+            }
+        }
         
         
     }

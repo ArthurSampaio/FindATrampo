@@ -118,7 +118,7 @@
                                     <outlet property="avaliacaoLabel" destination="AqH-Ns-dqM" id="UPu-um-gbP"/>
                                     <outlet property="nomeLabel" destination="aqT-3b-wTS" id="nNH-19-mXS"/>
                                     <outlet property="profissaoLabel" destination="7kj-Ov-yWZ" id="sXN-9r-82h"/>
-                                    <segue destination="Epd-Z8-ChP" kind="show" id="HlL-NG-mPQ"/>
+                                    <segue destination="Epd-Z8-ChP" kind="show" identifier="showNextView" id="HlL-NG-mPQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="2032.8" y="825.33733133433293"/>
         </scene>
-        <!--View Controller-->
+        <!--User View Controller-->
         <scene sceneID="MQl-dJ-mkp">
             <objects>
-                <viewController id="Epd-Z8-ChP" sceneMemberID="viewController">
+                <viewController id="Epd-Z8-ChP" customClass="UserViewController" customModule="FindATrampo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MLh-4W-s0I"/>
                         <viewControllerLayoutGuide type="bottom" id="nHu-dk-kc4"/>
@@ -203,6 +203,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="q5Z-b8-l68" secondAttribute="trailing" constant="52" id="V7Z-WG-oJZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AvaliacaoText" destination="iUS-gZ-G9p" id="aZR-a5-Kq3"/>
+                        <outlet property="descricaoTextView" destination="2Cg-nb-mbj" id="ek7-uA-1Nh"/>
+                        <outlet property="nomeImageView" destination="rEc-rP-Osh" id="uNn-x2-9dS"/>
+                        <outlet property="profissaoText" destination="6uq-Hi-q2U" id="yYl-oJ-1aQ"/>
+                        <outlet property="userImageView" destination="q5Z-b8-l68" id="hri-9e-HP3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbV-ic-YaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
