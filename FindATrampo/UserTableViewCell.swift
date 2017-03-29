@@ -10,8 +10,12 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var nomeLabel: UILabel!
     
+    @IBOutlet weak var profissaoLabel: UILabel!
 
+    @IBOutlet weak var avaliacaoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

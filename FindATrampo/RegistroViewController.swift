@@ -26,13 +26,16 @@ class RegistroViewController: UIViewController {
         usuario.nome = nomeTextField.text
         usuario.profissao = profissaoTextField.text
         usuario.descricao = descricaoTextField.text
-        usuario.avaliacao = Float(avaliacaoTextField.text!)!
+        usuario.avaliacao = (Float)(avaliacaoTextField.text! as String)!
         
         if (TrampoDAO.adicionar(usuario: usuario)) {
             nomeTextField.text = ""
             profissaoTextField.text = ""
             descricaoTextField.text = ""
             avaliacaoTextField.text = ""
+            print ("worked")
+        }else{
+            print ("fjdjfskdfs")
         }
         
     }

@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4TP-mz-gfe" id="uk6-t1-kRt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-fc-AK5" userLabel="nomeServiço">
@@ -56,20 +56,20 @@
             </objects>
             <point key="canvasLocation" x="1447.2" y="-54.422788605697157"/>
         </scene>
-        <!--Table View Controller-->
+        <!--User Table View Controller-->
         <scene sceneID="ct5-ZB-AnY">
             <objects>
-                <tableViewController id="YC2-1f-Ci4" sceneMemberID="viewController">
+                <tableViewController id="YC2-1f-Ci4" customClass="UserTableViewController" customModule="FindATrampo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" sectionHeaderHeight="28" sectionFooterHeight="28" id="OT1-Th-Bep">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="KTq-Ew-egq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userIdentifier" rowHeight="175" id="KTq-Ew-egq" customClass="UserTableViewCell" customModule="FindATrampo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTq-Ew-egq" id="W1e-qT-gM7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X26-3s-dVI">
@@ -115,6 +115,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="avaliacaoLabel" destination="AqH-Ns-dqM" id="UPu-um-gbP"/>
+                                    <outlet property="nomeLabel" destination="aqT-3b-wTS" id="nNH-19-mXS"/>
+                                    <outlet property="profissaoLabel" destination="7kj-Ov-yWZ" id="sXN-9r-82h"/>
                                     <segue destination="Epd-Z8-ChP" kind="show" id="HlL-NG-mPQ"/>
                                 </connections>
                             </tableViewCell>
@@ -290,7 +293,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-yh-ixU">
-                                <rect key="frame" x="146" y="502" width="83" height="30"/>
+                                <rect key="frame" x="146" y="497" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registrar">
                                     <color key="titleColor" red="1" green="0.37945885854824202" blue="0.81930783443716448" alpha="1" colorSpace="calibratedRGB"/>

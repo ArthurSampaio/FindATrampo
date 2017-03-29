@@ -12,13 +12,14 @@ class UserTableViewController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     
-    //var filteredArtists = [Artist]()
-    //var artists = [Artist]();
+    var filteredUsers = [Usuario]()
+    var users = [Usuario]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      //  artists = ArtistDAO.getArtists();
+        users = TrampoDAO.buscarTodosUsuarios();
+        print (TrampoDAO.buscarTodosUsuarios())
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
@@ -46,30 +47,30 @@ class UserTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if searchController.isActive && searchController.searchBar.text != "" {
-        //    return filteredArtists.count
+            return filteredUsers.count
         }
-        
-        return 0
-        //return artists.count
+    
+        return users.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: "artistIdentifier", for: indexPath)
+            withIdentifier: "userIdentifier", for: indexPath)
         
-        if let artistCell = cell as? UserTableViewCell{
-          //  let artist: Artist
+        if let userCell = cell as? UserTableViewCell{
+            let user: Usuario
             
             if searchController.isActive && searchController.searchBar.text != "" {
-            //    artist = filteredArtists[indexPath.row]
+                user = filteredUsers[indexPath.row]
             } else {
-              //  artist = artists[indexPath.row]
+                user = users[indexPath.row]
             }
             
-         //   artistCell.artistNameLabel.text = artist.getName();
-           // artistCell.artistSongLabel.text = artist.getSong();
+            userCell.nomeLabel.text = user.nome;
+            userCell.profissaoLabel.text = user.profissao
+            userCell.avaliacaoLabel.text = (String)(user.avaliacao as Float)
         }
         
         // Configure the cell...
@@ -102,9 +103,9 @@ class UserTableViewController: UITableViewController {
     
     
     func filterContent(for searchText: String, scope: String = "All") {
-//        filteredArtists = artists.filter({ pod in
-    //        return pod.getName().lowercased().contains(searchText.lowercased())
-  //      })
+        filteredUsers = users.filter({ usr in
+           return usr.nome!.lowercased().contains(searchText.lowercased())
+       })
         
         tableView.reloadData()
         

@@ -33,7 +33,7 @@ class TrampoDAO {
         return CoreDataManager.remover(usuario)
     }
     
-    static func buscarTodos() -> [Usuario] {
+    static func buscarTodosUsuarios() -> [Usuario] {
         var resultados = [Usuario] ()
         
         let request: NSFetchRequest<Usuario> = Usuario.fetchRequest()
