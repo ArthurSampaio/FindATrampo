@@ -16,6 +16,7 @@ class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var avaliacaoLabel: UILabel!
     
+    @IBOutlet weak var userImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

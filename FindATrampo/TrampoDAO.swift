@@ -83,4 +83,20 @@ class TrampoDAO {
         return resultados
     }
     
+    static func cleanData(){
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+        
+        // Create Batch Delete Request
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try CoreDataManager.getContext().execute(batchDeleteRequest)
+            
+        } catch {
+            // Error Handling
+        }
+    }
+    
+    
+    
 }

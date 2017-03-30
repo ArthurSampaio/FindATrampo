@@ -118,6 +118,7 @@
                                     <outlet property="avaliacaoLabel" destination="AqH-Ns-dqM" id="UPu-um-gbP"/>
                                     <outlet property="nomeLabel" destination="aqT-3b-wTS" id="nNH-19-mXS"/>
                                     <outlet property="profissaoLabel" destination="7kj-Ov-yWZ" id="sXN-9r-82h"/>
+                                    <outlet property="userImageView" destination="gWP-C0-dun" id="ioM-DU-Gyq"/>
                                     <segue destination="Epd-Z8-ChP" kind="show" identifier="showNextView" id="HlL-NG-mPQ"/>
                                 </connections>
                             </tableViewCell>
@@ -378,7 +379,7 @@
                                     <color key="titleColor" red="0.60829837330000003" green="0.3174979402" blue="0.99835759400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AdU-3J-NEp" kind="show" id="uec-fA-Ob4"/>
+                                    <segue destination="AdU-3J-NEp" kind="show" identifier="showLoginView" id="uec-fA-Ob4"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="findATrampo1" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-aH-HS3">

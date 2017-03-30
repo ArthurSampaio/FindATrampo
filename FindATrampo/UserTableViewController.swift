@@ -70,6 +70,7 @@ class UserTableViewController: UITableViewController {
             
             userCell.nomeLabel.text = user.nome;
             userCell.profissaoLabel.text = user.profissao
+            userCell.userImageView.image = UIImage(named: "fake")
             userCell.avaliacaoLabel.text = (String)(user.avaliacao as Float)
         }
         
@@ -104,7 +105,7 @@ class UserTableViewController: UITableViewController {
     
     func filterContent(for searchText: String, scope: String = "All") {
         filteredUsers = users.filter({ usr in
-           return usr.nome!.lowercased().contains(searchText.lowercased())
+           return usr.profissao!.lowercased().contains(searchText.lowercased())
        })
         
         tableView.reloadData()

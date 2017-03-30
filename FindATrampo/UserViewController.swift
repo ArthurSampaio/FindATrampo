@@ -35,6 +35,8 @@ class UserViewController: UIViewController {
         AvaliacaoText.text = (String)(user.avaliacao as Float);
         
         descricaoTextView.text = user.descricao
+        
+        userImageView.image = UIImage(named: "fake")
         // Do any additional setup after loading the view.
     }
 
