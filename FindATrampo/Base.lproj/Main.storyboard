@@ -128,7 +128,9 @@
                             <outlet property="delegate" destination="YC2-1f-Ci4" id="zrK-sG-xlr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Serviços sempre disponíveis" id="9js-2N-m50"/>
+                    <navigationItem key="navigationItem" title="Serviços sempre disponíveis" id="9js-2N-m50">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="a6e-ny-Jxu"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UW-t7-jV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +197,9 @@
                                 <state key="normal" title="Contratar">
                                     <color key="titleColor" red="0.96746024880000003" green="0.99561349759999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HAW-dQ-daX" kind="show" id="tmY-BG-b8T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,6 +220,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbV-ic-YaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2916" y="875.71214392803608"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GY3-5Q-zzN">
+            <objects>
+                <viewController id="HAW-dQ-daX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Psp-kY-pgB"/>
+                        <viewControllerLayoutGuide type="bottom" id="kpx-Pp-xQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Spf-rV-BpR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="construction" translatesAutoresizingMaskIntoConstraints="NO" id="Fjv-PA-SLg">
+                                <rect key="frame" x="26" y="144" width="323" height="374"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Em construção" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-lR-eOv">
+                                <rect key="frame" x="26" y="526" width="323" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fjv-PA-SLg" firstAttribute="leading" secondItem="Spf-rV-BpR" secondAttribute="leadingMargin" constant="10" id="8Pu-Ey-sjB"/>
+                            <constraint firstItem="kpx-Pp-xQy" firstAttribute="top" secondItem="Fjv-PA-SLg" secondAttribute="bottom" constant="100" id="GCa-17-kb3"/>
+                            <constraint firstItem="Fjv-PA-SLg" firstAttribute="top" secondItem="Psp-kY-pgB" secondAttribute="bottom" constant="80" id="Ifa-gx-fMD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fjv-PA-SLg" secondAttribute="trailing" constant="10" id="Shr-HQ-LJc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSA-El-fRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3685.5999999999999" y="856.82158920539734"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EuR-C2-R8i">
@@ -548,6 +590,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="construction" width="144" height="156"/>
         <image name="findATrampo1" width="160" height="110"/>
         <image name="view1" width="250" height="250"/>
         <image name="view2" width="250" height="250"/>
