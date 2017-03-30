@@ -70,7 +70,7 @@ class UserTableViewController: UITableViewController {
             
             userCell.nomeLabel.text = user.nome;
             userCell.profissaoLabel.text = user.profissao
-            userCell.userImageView.image = UIImage(named: "fake")
+            userCell.userImageView.image = UIImage(named: user.foto!)
             userCell.avaliacaoLabel.text = (String)(user.avaliacao as Float)
         }
         
