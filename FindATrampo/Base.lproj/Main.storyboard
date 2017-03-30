@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="1447.2" y="-54.422788605697157"/>
         </scene>
-        <!--User Table View Controller-->
+        <!--Serviços sempre disponíveis-->
         <scene sceneID="ct5-ZB-AnY">
             <objects>
                 <tableViewController id="YC2-1f-Ci4" customClass="UserTableViewController" customModule="FindATrampo" customModuleProvider="target" sceneMemberID="viewController">
@@ -128,7 +128,7 @@
                             <outlet property="delegate" destination="YC2-1f-Ci4" id="zrK-sG-xlr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9js-2N-m50"/>
+                    <navigationItem key="navigationItem" title="Serviços sempre disponíveis" id="9js-2N-m50"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UW-t7-jV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
