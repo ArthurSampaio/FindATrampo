@@ -50,8 +50,14 @@ class LoginViewController: UIViewController {
     }
     
     func initDAO(){
-      
-        TrampoDAO.cleanData()
+        
+        var usuarios = TrampoDAO.buscarTodosUsuarios()
+        
+        for i in usuarios{
+            TrampoDAO.remover(usuario: i)
+        }
+        
+        
         
         var usuario1 = Usuario()
         var usuario2 = Usuario()
