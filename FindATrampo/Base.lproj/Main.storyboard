@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4TP-mz-gfe" id="uk6-t1-kRt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-fc-AK5" userLabel="nomeServiço">
@@ -69,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTq-Ew-egq" id="W1e-qT-gM7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X26-3s-dVI">
@@ -248,7 +248,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="erz-8Z-CDU">
                                 <rect key="frame" x="36" y="40" width="303" height="151.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Std-kt-1EV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Std-kt-1EV">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -260,7 +260,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-HC-iye">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-HC-iye">
                                         <rect key="frame" x="0.0" y="50.5" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -272,7 +272,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tas-n9-tcM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repetir Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tas-n9-tcM">
                                         <rect key="frame" x="0.0" y="101" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -422,21 +422,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-cp-n2C">
-                                <rect key="frame" x="67" y="262" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0016353240705119232" blue="0.76364920246529489" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">O que faz o FindATrampo? É um app para aproximar usuários que, por exemplo, precisam de uma renda extra mas que não querem se confrontar com meios burocráticos.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view1" translatesAutoresizingMaskIntoConstraints="NO" id="wE7-u9-Oe2">
+                                <rect key="frame" x="46" y="110" width="283" height="457"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.79883083158986068" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98268098209999999" green="1" blue="0.99578305519999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wE7-u9-Oe2" firstAttribute="leading" secondItem="vCc-Qv-tV5" secondAttribute="leadingMargin" constant="30" id="1sE-bf-Ton"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wE7-u9-Oe2" secondAttribute="trailing" constant="30" id="EVD-0F-spN"/>
+                            <constraint firstItem="wE7-u9-Oe2" firstAttribute="top" secondItem="8uh-tX-NSM" secondAttribute="bottom" constant="90" id="Mc9-fh-kkf"/>
+                            <constraint firstItem="sbQ-Ne-obh" firstAttribute="top" secondItem="wE7-u9-Oe2" secondAttribute="bottom" constant="100" id="RKb-fm-wha"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXc-Fe-Dek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4508" y="1003.4482758620691"/>
+            <point key="canvasLocation" x="-4508" y="2477"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vWu-bD-mbF">
@@ -449,12 +450,23 @@
                     <view key="view" contentMode="scaleToFill" id="ZVZ-AI-J9D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96145302323213466" green="0.57519765702062708" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view2" translatesAutoresizingMaskIntoConstraints="NO" id="PTM-kx-PTa">
+                                <rect key="frame" x="46" y="110" width="283" height="457"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98268098212472565" green="1" blue="0.99578305521551103" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ua3-HM-PfZ" firstAttribute="top" secondItem="PTM-kx-PTa" secondAttribute="bottom" constant="100" id="A9Y-Uh-PGU"/>
+                            <constraint firstItem="PTM-kx-PTa" firstAttribute="leading" secondItem="ZVZ-AI-J9D" secondAttribute="leadingMargin" constant="30" id="crL-cG-TkN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PTM-kx-PTa" secondAttribute="trailing" constant="30" id="gQk-mi-Ci8"/>
+                            <constraint firstItem="PTM-kx-PTa" firstAttribute="top" secondItem="nKj-LH-nrC" secondAttribute="bottom" constant="90" id="nUW-lX-muw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPA-f1-Xvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3695" y="1003"/>
+            <point key="canvasLocation" x="-4508" y="1721"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hZl-G5-9WB">
@@ -475,6 +487,13 @@
                                     <segue destination="5mw-1U-LHK" kind="show" id="4Za-Yh-uF8"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="O que faz o FindATrampo? CZZ, por exemplo, precisam de uma renda extra mas que não querem se confrontar com meios burocráticos." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-cp-n2C">
+                                <rect key="frame" x="67" y="68" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0016353240705119232" blue="0.76364920246529489" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.74490380101124365" blue="0.9949050691804685" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -487,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlj-2Z-r4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2866" y="1003"/>
+            <point key="canvasLocation" x="-4508" y="931"/>
         </scene>
         <!--Item-->
         <scene sceneID="bmd-nc-5XX">
@@ -530,8 +549,10 @@
     </scenes>
     <resources>
         <image name="findATrampo1" width="160" height="110"/>
+        <image name="view1" width="250" height="250"/>
+        <image name="view2" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8rk-jb-bQe"/>
+        <segue reference="4Za-Yh-uF8"/>
     </inferredMetricsTieBreakers>
 </document>
