@@ -62,24 +62,29 @@ class LoginViewController: UIViewController {
         let usuario1 = Usuario()
         let usuario2 = Usuario()
         let usuario3 = Usuario()
+        let usuario4 = Usuario()
         
         usuario1.nome = "Pedro Correa"
         usuario1.profissao = "Encanador"
         usuario1.avaliacao = 4.5
-        usuario1.descricao = "Olá. Tenho bom histórico cuidando de problemas relacionados aos encanamentos. Meus fins de semana são livres e desejo preenchê-los, aumentando o tamanho de deste histórico. Posso ajudar?"
-        usuario1.foto = "encanador"
+        usuario1.descricao = "Olá. Procuro alguém que lide com problemas relacionados encanamentos. Minha pia entupiu e não tenho tempo de resolver por mim no fim de semana. Ajuda!"
         
         usuario2.nome = "Melissa Correa"
         usuario2.profissao = "Diarista"
         usuario2.avaliacao = 5.0
-        usuario2.descricao = "Oi, tudo bem? Tenho bons dotes culinários. Com final de semana livre!!! Se deseja fazer um almoço pra sua família e não tem tempo, posso te ajudar!"
+        usuario2.descricao = "Preciso de ajuda com Matemática no geral. Alguém disponível durante todos os dias na semana, à noite.Umas duas horinhas! Geometria, Álgebra e que tenha paciência para ensinar Aritmética. =]"
         usuario2.foto = "diarista"
         
         usuario3.nome = "Lazaro Henrique"
         usuario3.profissao = "Prof. de Reforço"
         usuario3.avaliacao = 4.5
-        usuario3.descricao = "Bem-vindo! Posso te ajudar com Matemática no geral durante todos os dias, à noite. Geometria, Álgebra e até tenho paciência para ensinar Aritmética. Com qual ferramenta vamos lidar?"
+        usuario3.descricao = "Oi, tudo bem? Preciso de alguém com bons dotes culinários. Com final de semana livre!!!  Desejo fazer um almoço para minha família e não tenho tempo, preciso de uma mãozinha!"
         usuario3.foto = "ic-prof"
+        
+        usuario4.nome = "Zé do Bar da Esquina"
+        usuario4.profissao = "Garçom"
+        usuario4.descricao = "Olá! Sou dono de um bar e próximo fim de semana irei precisar de mais garçons do que o comum. Preciso de pessoas livre do sábado ao domingo! Interessados entrar em contato!"
+        usuario4.foto = "garcom"
         
         
         
@@ -87,6 +92,8 @@ class LoginViewController: UIViewController {
         TrampoDAO.adicionar(usuario: usuario1)
         TrampoDAO.adicionar(usuario: usuario2)
         TrampoDAO.adicionar(usuario: usuario3)
+        TrampoDAO.adicionar(usuario: usuario4)
+        
     
     }
     
