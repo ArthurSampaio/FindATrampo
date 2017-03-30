@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         
-        var usuarios = TrampoDAO.buscarTodosUsuarios()
+        let usuarios = TrampoDAO.buscarTodosUsuarios()
         
         for usr in usuarios{
             if(usr.nome == loginTextField.text! && usr.senha != "" && usr.senha! == senhaTextField.text!){
@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
     
     func initDAO(){
         
-        var usuarios = TrampoDAO.buscarTodosUsuarios()
+        let usuarios = TrampoDAO.buscarTodosUsuarios()
         
         for i in usuarios{
             TrampoDAO.remover(usuario: i)
@@ -59,21 +59,25 @@ class LoginViewController: UIViewController {
         
         
         
-        var usuario1 = Usuario()
-        var usuario2 = Usuario()
-        var usuario3 = Usuario()
+        let usuario1 = Usuario()
+        let usuario2 = Usuario()
+        let usuario3 = Usuario()
         
         usuario1.nome = "Pedro Correa"
         usuario1.profissao = "Encanador"
         usuario1.avaliacao = 4.5
+        usuario1.descricao = "Olá. Tenho bom histórico cuidando de problemas relacionados aos encanamentos. Meus fins de semana são livres e desejo preenchê-los, aumentando o tamanho de deste histórico. Posso ajudar?"
         
         usuario2.nome = "Melissa Correa"
         usuario2.profissao = "Diarista"
         usuario2.avaliacao = 5.0
+        usuario2.descricao = "Oi, tudo bem? Tenho bons dotes culinários. Com final de semana livre!!! Se deseja fazer um almoço pra sua família e não tem tempo, posso te ajudar!"
         
         usuario3.nome = "Lazaro Henrique"
-        usuario3.profissao = "Prof. de Reforco"
+        usuario3.profissao = "Prof. de Reforço"
         usuario3.avaliacao = 4.5
+        usuario3.descricao = "Bem-vindo! Posso te ajudar com Matemática no geral durante todos os dias, à noite. Geometria, Álgebra e até tenho paciência para ensinar Aritmética. Com qual ferramenta vamos lidar?"
+        
         
         TrampoDAO.adicionar(usuario: usuario1)
         TrampoDAO.adicionar(usuario: usuario2)
