@@ -36,7 +36,7 @@ class UserViewController: UIViewController {
         
         descricaoTextView.text = user.descricao
         
-        userImageView.image = UIImage(named: "fake")
+        userImageView.image = UIImage(named: user.foto!)
         // Do any additional setup after loading the view.
     }
 

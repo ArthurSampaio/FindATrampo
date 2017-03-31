@@ -68,6 +68,7 @@ class LoginViewController: UIViewController {
         usuario1.profissao = "Encanador"
         usuario1.avaliacao = 4.5
         usuario1.descricao = "Olá. Procuro alguém que lide com problemas relacionados encanamentos. Minha pia entupiu e não tenho tempo de resolver por mim no fim de semana. Ajuda!"
+        usuario1.foto = "encanador"
         
         usuario2.nome = "Melissa Correa"
         usuario2.profissao = "Diarista"
